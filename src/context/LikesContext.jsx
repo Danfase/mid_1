@@ -17,3 +17,4 @@ export const LikesProvider = ({ children }) => {
 };
 
 export const useLikes = () => useContext(LikesContext);
+export { LikesContext };

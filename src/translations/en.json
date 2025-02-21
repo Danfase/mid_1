@@ -1,8 +1,7 @@
 {
-    "helloUser": "Hello, User!",
+    "greeting": "Hello, User!",
     "like": "Like",
-    "liked": "Liked!",
     "toggleTheme": "Toggle Theme",
     "switchLanguage": "Switch Language",
     "likes": "Likes"
-}
+  }
