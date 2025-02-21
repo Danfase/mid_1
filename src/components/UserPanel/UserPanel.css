@@ -1,0 +1,60 @@
+/* Общий контейнер "карточки" */
+.user-panel {
+  max-width: 400px;             /* Ширина карточки */
+  margin: 40px auto;            /* Отцентрировать по горизонтали и дать отступ сверху/снизу */
+  padding: 20px;                /* Внутренние отступы */
+  border-radius: 10px;          /* Скруглённые углы */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Лёгкая тень */
+  text-align: center;           /* Текст по центру */
+  transition: background-color 0.3s, color 0.3s; /* Плавные переходы */
+  background-color: #fff;       /* Светлый фон по умолчанию */
+  color: #000;                  /* Тёмный цвет текста по умолчанию */
+}
+
+/* Тёмная тема (если вы используете класс 'dark') */
+.user-panel.dark {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+/* Заголовок */
+.user-panel h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Отображение лайков */
+.user-panel p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/* Стили для кнопок */
+.user-panel button {
+  display: inline-block;
+  margin: 0 5px;                /* Отступы между кнопками */
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* Основной цвет кнопки */
+  background-color: #007bff;    /* Синий фон */
+  color: #fff;                  /* Белый текст */
+  transition: background-color 0.2s;
+}
+
+.user-panel button:hover {
+  background-color: #0056b3;    /* Потемнение при наведении */
+}
+
+/* Дополнительно, если хотите отдельный цвет для кнопки "Liked!" (красную) */
+.user-panel button.liked {
+  background-color: #e02d2d;    /* Красный */
+}
+.user-panel button.liked:hover {
+  background-color: #c01e1e; 
+}
