@@ -1,16 +1,23 @@
+import React from 'react';
+
 import { useTheme } from '../../hooks/useTheme';
 import { useLanguage } from '../../hooks/useLanguage';
 import { useLikes } from '../../hooks/useLikes';
-import translations from '../../translations/ru.json';
+
+import en from '../../translations/en.json';
+import ru from '../../translations/ru.json';
+
 import Button from '../Button';
 import './UserPanel.css';
 
+const translations = { en, ru };
+
 const UserPanel = () => {
   const { theme, toggleTheme } = useTheme();
-  const { switchLanguage } = useLanguage();
+  const { language, switchLanguage } = useLanguage();
   const { likes, addLike } = useLikes();
 
-  const tox = translations;
+  const tox = translations[language];
 
   return (
     <div className={`user-panel ${theme}`}>
