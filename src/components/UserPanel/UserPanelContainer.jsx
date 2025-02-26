@@ -5,13 +5,16 @@ import UserPanel from './UserPanel';
 
 const UserPanelContainer = () => {
   return (
-    <ThemeProvider>
-      <LanguageProvider>
-        <LikesProvider>
-          <UserPanel />
-        </LikesProvider>
-      </LanguageProvider>
-    </ThemeProvider>
+
+    <div>
+      <ThemeProvider>
+        <LanguageProvider>
+          <LikesProvider>
+            <UserPanel />
+          </LikesProvider>
+        </LanguageProvider>
+      </ThemeProvider>
+    </div>
   );
 };
 
